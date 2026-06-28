@@ -1,15 +1,28 @@
-# Portfolio
+# Meu Portfolio
 
-Esse é um de apresentação
+##  Sobre o Projeto
 
-## Tecnologias usadas:
+Este é o meu **portfólio pessoal**, desenvolvido para apresentar minha trajetória, habilidades e projetos como desenvolvedora front-end.
 
-- React 
-- HTML e CSS
-- Framer Motion 
+O site foi construído com React e conta com animações suaves, design responsivo e uma identidade visual própria, com paleta em roxo escuro e rosa — refletindo meu estilo criativo e atenção aos detalhes.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+##  Funcionalidades
 
-## Expanding the ESLint configuration
+- 👩‍💻 Seção About com apresentação pessoal
+- 🛠️ Seção de Skills com barras de progresso animadas
+- 📂 Seção de Projetos com cards interativos
+- 📬 Seção de Contato
+- 🎞️ Animações com Framer Motion
+- 📱 Layout responsivo para mobile e desktop
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Tecnologias
+
+![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat&logo=vite&logoColor=white)
+![CSS Modules](https://img.shields.io/badge/CSS%20Modules-000000?style=flat&logo=cssmodules&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
+![Framer Motion](https://img.shields.io/badge/Framer%20Motion-0055FF?style=flat&logo=framer&logoColor=white)
+
+## 🔗 Acesse
+
+👉 [Ver portfólio online](#) — *(adiciona o link do deploy aqui)*
