@@ -1,14 +1,5 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-body{
-    background: linear-gradient(to right, rgb(17, 17, 52),   rgb(227, 21, 83));
-}
-
 .hero{
+    background-color: rgb(17, 17, 52);
     width: 100%;
     display: flex;
     align-items: center;
@@ -20,7 +11,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 10px;
+    margin-left: 2rem;
 }
 
 .firstName{
@@ -54,33 +45,60 @@ body{
 .btns .btnFirst{
     width: 145px;
     height: 55px;
+    background-color:rgb(231, 68, 117) ;
     padding: 18px 25px;
     text-decoration: none;
+    border: none;
     color: white;
     font-weight: 450;
-    background: linear-gradient(to right,  rgb(231, 68, 117),   rgb(227, 21, 83));
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .btns .btnSecond{
     width: 145px;
     height: 55px;
-    padding: 18px 42px;
+    padding: 16px 5px 0px 40px;
     text-decoration: none;
-    color: white;
+    color: rgb(255, 255, 255);
     font-size: 500;
     background-color: rgba(255, 255, 255, 0.067);
-    border: 1px solid white;
+    border: 2px solid rgb(231, 68, 117);
     border-radius: 25px;
+    cursor: pointer;
 }
 
 .imagem{
-    margin: 55px;
+    position: relative;
+    width: 450px;
+    height: 550px;
+    background-color: rgb(231, 68, 117);
+    border-radius: 60% 40% 55% 45% / 50% 60% 40% 50%;
+    box-shadow: 0px 0px 40px 10px rgba(231, 68, 117, 0.4);
+    margin: 1rem 7rem 4rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
 
 .imagem img{
-    width: 650px;
-    height: 520px;
-    border-radius: 25px;
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
 }
 
+.imagem img:hover{
+    transform: scale(1.1);
+}
+
+.socialMedia{
+    display: flex;
+}
+
+.socialMedia svg{
+    width: 24px;
+    height: 24px;
+    stroke: white;
+}

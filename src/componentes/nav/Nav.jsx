@@ -3,7 +3,7 @@ import style from './nav.module.css'
 function Nav (){
     return(
         <nav className={style.navbar}>
-            <h1>Protifolio</h1>
+            <h1>PORTFOLIO</h1>
             <ul>
                 <li>Sobre</li>
                 <li>Projetos</li>

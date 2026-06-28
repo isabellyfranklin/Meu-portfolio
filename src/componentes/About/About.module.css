@@ -1,50 +1,138 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-.about{
+.about {
     width: 100%;
     color: white;
-    background-color: rgba(17, 17, 52, 0.597) ;
+    background-color: rgba(17, 17, 52, 0.627);
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 10rem;
+    padding: 80px 24px 100px;
 }
 
-.about h2{
-    font-size: 2rem;
-    margin: 3rem;
+.about .tag {
+    display: inline-block;
+    background: rgba(255, 45, 111, 0.12);
+    color: #ff2d6f;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 5px 16px;
+    border-radius: 999px;
+    border: 1px solid rgba(255, 45, 111, 0.25);
+    margin-bottom: 14px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
 }
 
-.contentAbout{
+.about h2 {
+    font-size: 37px;
+    font-weight: 700;
+    margin-bottom: 60px;
+    text-align: center;
+}
+
+.contentAbout {
     width: 100%;
-    background-color: red;
-    display: flex;
-    justify-content: space-around;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: start;
 }
 
-.contentAbout p{
-    line-height: 35px;
-    width: 700px;
-    height: 500px;
-    font-size: 17px;
-}
-
-.stats{
-    overflow: hidden;
+.bio{
+    width: 600px;
     display: flex;
     flex-direction: column;
-    gap:1rem;
+    gap: 16px;
 }
 
-.statsItem{
-    width: 440px;
-    height: 80px;
-    padding: 10px;
-    border: 1px solid  rgba(7, 7, 22, 0.597)  ;
-    border-radius: 15px;
+.bio p {
+    color: rgba(255, 255, 255, 0.65);
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.bioLinks {
+    display: flex;
+    gap: 12px;
+    margin-top: 8px;
+}
+
+.btnPrimary {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    background: #ff2d6f;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btnOutline {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 13px;
+    font-weight: 600;
+    background: transparent;
+    color: #fff;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.statsItem {
+    width: 320px;
+    height: 100px;
+    background-color: rgba(38, 38, 110, 0.4);
+    border: 1px solid rgba(107, 42, 95, 0.4);
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    transition: border-color 0.2s;
+}
+
+.statsItem:hover {
+    border-color: rgba(255, 45, 111, 0.5);
+}
+
+.statIcon {
+    width: 40px;
+    height: 40px;
+    border-radius: 8px;
+    background: rgba(255, 45, 111, 0.12);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    flex-shrink: 0;
+}
+
+.statsItem h3 {
+    color: #ff2d6f;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 3px;
+}
+
+.statsItem p {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 14px;
+    line-height: 1.4;
 }

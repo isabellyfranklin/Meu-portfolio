@@ -1,11 +1,17 @@
 import style from './Hero.module.css'
-import notebookImg from '../../assets/notebook-codando.webp'
+import { motion } from 'framer-motion'
+import minhaBoneca from '../../assets/minha-boneca.png'
 
 
 function Hero (){
     return(
         <section className={style.hero}>
-            <div className={style.content}>
+            <motion.div 
+            initial={{ opacity: 0, x: -100 }}
+            whileInView={{ opacity: 1, x: 0 }} 
+            transition={{ duration: 0.6 }}
+        
+            className={style.content}>
                 <h1 className={style.firstName}>Olá, eu sou</h1>
                 <h1 className={style.name}>Isabelly Franklin</h1>
                 <p>Desenvolvedora front-end apaixonada por criar interfaces modernas, responsivas e com aquele cuidado especial nos detalhes.</p>
@@ -15,15 +21,19 @@ function Hero (){
                     <a className={style.btnSecond}  href="#">Contato</a>
                 </div>
 
-                <div className="social-media">
-                    <img src="" alt="" />
-                    <img src="" alt="" />
+                <div className={style.socialMedia}>
+                    
                 </div>
-            </div>
+            </motion.div>
 
-            <div className={style.imagem}>
-                <img src={notebookImg} alt="notebook-codando"/>
-            </div>
+            <motion.div 
+            initial={{ opacity: 0, x: 100 }}
+            whileInView={{ opacity: 1, x: 0 }} 
+            transition={{ duration: 0.6 }}
+
+            className={style.imagem}>
+                <img src={minhaBoneca} alt="notebook-codando"/>
+            </motion.div>
         </section>
     )
    

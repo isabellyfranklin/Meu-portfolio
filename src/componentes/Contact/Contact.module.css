@@ -1,0 +1,49 @@
+.contato{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contato h2{
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    margin: 10rem  0px 5px;
+}
+
+.contato p{
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.65);
+}
+
+.contato .mediaContato{
+    width: 760px;
+    height: 250px;
+    border-radius: 15px;
+    display: flex;;
+    justify-content: center;
+    background-color: rgba(17, 17, 52, 0.444);
+    margin: 2rem 0px 100px;
+}
+
+.mediaContato .media{
+    width: 250px;
+    height: 190px;
+    border-radius: 15px;
+    background-color:rgb(17, 17, 52);
+    margin: 2rem 17px 0px  ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mediaContato .media .icon img{
+    width: 40px;
+    height: 40px;
+    filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(1234%) hue-rotate(316deg);
+}
