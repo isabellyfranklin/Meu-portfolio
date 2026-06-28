@@ -1,72 +1,98 @@
-import style from "./Projects.module.css";
+import styles from "./Projects.module.css";
 import fotoComputador from "../../assets/notebook-codando.webp"
 import { ExternalLink } from 'lucide-react'
+import { motion } from 'framer-motion'
+
 
 
 function Projects() {
   return(
-    <section className={style.projects}>
-      <h2>Projetos em Destaque</h2>
-      <p>Alguns dos meu projetos mais recentes</p>
+    <section className={styles.projects}>
+      <motion.h2
+      initial={{ opacity: 0, y: -30 }}  
+      whileInView={{ opacity: 1, x: 0 }} 
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      >Projetos em Destaque</motion.h2>
+      
+      <motion.p
+      initial={{ opacity: 0, y: -30 }}  
+      whileInView={{ opacity: 1, x: 0 }} 
+      transition={{ duration: 0.6 }}
+      viewport={{ once: true }}
+      >Alguns dos meu projetos mais recentes</motion.p>
 
-      <div className={style.allProjects}>
+      <div className={styles.allProjects}>
+
 
         {/*PROJETO UM*/}
-        <div className={style.myProject}>
-          <div className={style.imagem}>
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0 }}
+        viewport={{ once: true }}
+        className={styles.myProject}>
+          <div className={styles.imagem}>
             <img src={fotoComputador}/>
           </div>
           <h3>Loja de Beleza</h3>
           <p>
-            E-commerce completo para loja de produtos de beleza com interface
-            elegante e responsiva.
+           A Loja de Beleza é um e-commerce desenvolvido para oferecer uma experiência de compra elegante e responsiva para produtos de beleza. O projeto conta com vitrine de produtos, carrossel interativo, navegação por categorias e layout totalmente adaptado para diferentes tamanhos de tela.
           </p>
-          <div className={style.languages}>
+          <div className={styles.languages}>
             <span>HTML</span>
             <span>CSS</span>
             <span style={{padding:'10px '}}>JavaScript</span>
           </div>
-          <a href="#" target="_blank">Ver Projeto <ExternalLink size={16}/> </a>
-        </div>
+          <a href="https://isabellyfranklin.github.io/Loja-de-Beleza/" target="_blank">Ver Projeto <ExternalLink size={16}/></a>
+        </motion.div>
+
 
         {/*PROJETO DOIS*/}
-        <div className={style.myProject}>  
-          <div className={style.imagem}>
+        <motion.div 
+        i initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.15 }}
+        viewport={{ once: true }}
+        className={styles.myProject}>  
+          <div className={styles.imagem}>
             <img src={fotoComputador}/>
           </div>
-          <h3>Loja de Beleza</h3>
+          <h3>Projeto Faculdade</h3>
           <p>
-            E-commerce completo para loja de produtos de beleza com interface
-            elegante e responsiva.
+          Um dashboard de estudos criado para facilitar a revisão dos conteúdos do curso de Análise e Desenvolvimento de Sistemas (ADS). O projeto permite navegar pelos resumos organizados por trimestre, testar o conhecimento com <strong>quizzes interativos</strong> e tudo salvo automaticamente no navegador.
           </p>
-          <div className={style.languages}>
+          <div className={styles.languages}>
             <span>HTML</span>
             <span>CSS</span>
             <span style={{padding:'10px '}}>JavaScript</span>
           </div>
-          <a href="#" target="_blank">Ver Projeto <ExternalLink size={16}/> </a>
-        </div>
+          <a href="https://isabellyfranklin.github.io/projeto-faculdade-materias/" target="_blank">Ver Projeto <ExternalLink size={16}/></a>
+        </motion.div>
 
         {/*PROJETO TRES*/}
-        <div className={style.myProject}>  
-          <div className={style.imagem}>
+        <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.3 }}
+        viewport={{ once: true }}
+        className={styles.myProject}>  
+          <div className={styles.imagem}>
             <img src={fotoComputador}/>
           </div>
-          <h3>Loja de Beleza</h3>
+          <h3>Coca Cola</h3>
           <p>
             E-commerce completo para loja de produtos de beleza com interface
             elegante e responsiva.
           </p>
-          <div className={style.languages}>
+          <div className={styles.languages}>
             <span>HTML</span>
             <span>CSS</span>
-            <span style={{padding:'10px '}}>JavaScript</span>
+            <span style={{padding:'10px'}}>JavaScript</span>
           </div>
           <a href="#" target="_blank">Ver Projeto <ExternalLink size={16}/> </a>
-        </div>
-   
-   
-      
+        </motion.div>
+    
 
       </div>
     </section>

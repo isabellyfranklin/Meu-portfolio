@@ -20,6 +20,13 @@
     padding: 15px 0px 10px 20px;
 }
 
+.navbar .ponto{
+    background-color:  rgb(227, 21, 83);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
 .navbar ul{
     display: flex;
     list-style: none;

@@ -53,6 +53,7 @@
     font-weight: 450;
     border-radius: 25px;
     cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 .btns .btnSecond{
@@ -66,6 +67,21 @@
     border: 2px solid rgb(231, 68, 117);
     border-radius: 25px;
     cursor: pointer;
+   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+.btns .btnFirst:hover{
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(231, 68, 117);
+    transform: scale(1.1);
+}
+
+.btns .btnSecond:hover{
+    color: black;
+    background-color: white;
+    border: 3px solid rgb(231, 68, 117);
+    transform: scale(1.1);
 }
 
 .imagem{
@@ -94,11 +110,22 @@
 }
 
 .socialMedia{
+    width: 25%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 17px 9px 0px;
+    gap: 15px;
 }
 
-.socialMedia svg{
-    width: 24px;
-    height: 24px;
-    stroke: white;
+.socialMedia .icon img{
+    width: 30px;
+    height: 35px;
+    filter: brightness(0) invert(1);
+    transition: transform 0.3s ease;
+}
+
+.socialMedia .icon img:hover{
+    filter: brightness(0) saturate(100%) invert(27%) sepia(89%) saturate(1234%) hue-rotate(316deg);
+    transform: scale(1.1);
 }

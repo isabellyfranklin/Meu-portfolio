@@ -46,7 +46,7 @@
 }
 
 .bio p {
-    color: rgba(255, 255, 255, 0.65);
+    color: rgb(255, 255, 255);
     font-size: 17px;
     line-height: 1.8;
 }
@@ -96,7 +96,7 @@
 .statsItem {
     width: 320px;
     height: 100px;
-    background-color: rgba(38, 38, 110, 0.4);
+    background-color:rgb(38, 38, 110);
     border: 1px solid rgba(107, 42, 95, 0.4);
     border-radius: 12px;
     padding: 16px 20px;
@@ -104,6 +104,12 @@
     align-items: center;
     gap: 14px;
     transition: border-color 0.2s;
+}
+
+.statsItem img{
+    width: 30px;
+    height: 30px;
+    filter:  brightness(0) invert(1);;
 }
 
 .statsItem:hover {
@@ -124,7 +130,7 @@
 
 .statsItem h3 {
     color: #ff2d6f;
-    font-size: 11px;
+    font-size: 13px;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;

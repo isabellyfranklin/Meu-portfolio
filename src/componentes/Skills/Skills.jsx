@@ -1,21 +1,39 @@
 import styles from './Skills.module.css'
+import { motion } from 'framer-motion'
 import iconHtml from './../../assets/icon-html.svg'
 import iconCss from './../../assets/icon-css.svg'
 import iconJavaScript from './../../assets/icon-java-script.svg'
 import iconReact from './../../assets/icon-react.svg'
 import IconResposividade from './../../assets/icon-resposividade.svg'
 
+
 function Skills (){
     return(
         <section className={styles.skills}>
 
-            <h2>Minhas Skills</h2>
-            <p>Tecnologias e ferramentas que domino</p>
+            <motion.h2
+            initial={{ opacity: 0, y: -30 }}  
+            whileInView={{ opacity: 1, x: 0 }} 
+            transition={{ duration: 0.6 }} 
+            viewport={{ once: true }}
+            >Minhas Skills</motion.h2>
+
+            <motion.p
+            initial={{ opacity: 0, y: -30 }}  
+            whileInView={{ opacity: 1, x: 0 }} 
+            transition={{ duration: 0.6 }} 
+            viewport={{ once: true }}
+            >Tecnologias e ferramentas que domino</motion.p>
 
         <div className={styles.languagesSkills}>
 
             {/*HTML */}
-            <div className={styles.skillCard}>   
+            <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0 }}
+            viewport={{ once: true }}
+            className={styles.skillCard}>   
                 <div className={styles.skillHeader}>
                     <span className={styles.icon}><img src={iconHtml}/></span>
                     <span className={styles.skillName}>HTML</span>
@@ -24,10 +42,15 @@ function Skills (){
                 <div className={styles.progressBar}>
                     <div className={styles.progressFill} style={{ width: '85%' }}></div>
                 </div>
-            </div>
+            </motion.div>
 
             {/*CSS*/}
-            <div className={styles.skillCard}>   
+            <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0 }}
+            viewport={{ once: true }}
+            className={styles.skillCard}>   
                 <div className={styles.skillHeader}>
                     <span className={styles.icon}><img src={iconCss}/></span>
                     <span className={styles.skillName}>CSS</span>
@@ -36,10 +59,15 @@ function Skills (){
                 <div className={styles.progressBar}>
                     <div className={styles.progressFill} style={{ width: '85%' }}></div>
                 </div>
-            </div>
+            </motion.div>
 
             {/*JavaScript*/}
-            <div className={styles.skillCard}>   
+            <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0 }}
+            viewport={{ once: true }}
+            className={styles.skillCard}>   
                 <div className={styles.skillHeader}>
                     <span className={styles.icon}><img src={iconJavaScript}/></span>
                     <span className={styles.skillName}>JavaScript</span>
@@ -49,11 +77,16 @@ function Skills (){
                 <div className={styles.progressBar}>
                     <div className={styles.progressFill} style={{ width: '50%' }}></div>
                 </div>
-            </div>
+            </motion.div>
 
 
             {/*REACT*/}
-             <div className={styles.skillCard}>   
+             <motion.div 
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0 }}
+            viewport={{ once: true }}
+            className={styles.skillCard}>   
                 <div className={styles.skillHeader}>
                     <span className={styles.icon}> <img src={iconReact}/></span>
                     <span className={styles.skillName}>React</span>
@@ -63,11 +96,16 @@ function Skills (){
                 <div className={styles.progressBar}>
                     <div className={styles.progressFill} style={{ width: '45%' }}></div>
                 </div>
-            </div>
+            </motion.div>
 
             
             {/*FIGMA*/}
-            <div className={styles.skillCard}>   
+            <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0 }}
+            viewport={{ once: true }}
+            className={styles.skillCard}>   
                 <div className={styles.skillHeader}>
                     <span className={styles.icon}><img src={iconCss}/></span>
                     <span className={styles.skillName}>Figma</span>
@@ -77,10 +115,15 @@ function Skills (){
                 <div className={styles.progressBar}>
                     <div className={styles.progressFill} style={{ width: '80%' }}></div>
                 </div>
-            </div>
+            </motion.div>
 
             {/*Responsivida*/}
-            <div className={styles.skillCard}>   
+            <motion.div
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.4, delay: 0 }}
+             viewport={{ once: true }}
+            className={styles.skillCard}>   
                 <div className={styles.skillHeader}>
                     <span className={styles.icon}><img src={IconResposividade}/></span>
                     <span className={styles.skillName}>Responsive Design</span>
@@ -90,7 +133,7 @@ function Skills (){
                 <div className={styles.progressBar}>
                     <div className={styles.progressFill} style={{ width: '90%' }}></div>
                 </div>
-            </div>
+            </motion.div>
 
         </div>
 
