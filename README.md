@@ -25,4 +25,4 @@ O site foi construído com React e conta com animações suaves, design responsi
 
 ## 🔗 Acesse
 
-👉 [Ver portfólio online](#) — *(adiciona o link do deploy aqui)*
+👉 [Ver portfólio online](#) — *(https://isabellyfranklin.github.io/Meu-portfolio/)*
