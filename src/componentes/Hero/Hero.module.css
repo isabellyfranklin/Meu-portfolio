@@ -58,18 +58,19 @@
 }
 
 .btns .btnSecond{
-    width: 145px;
+     width: 145px;
     height: 55px;
-    padding: 16px 5px 0px 40px;
+    background-color:rgba(255, 255, 255, 0.041) ;
+    padding: 14px 40px;
     text-decoration: none;
-    color: rgb(255, 255, 255);
+    border: none;
+    color:rgb(218, 213, 215) ;
+    border: 2px solid rgb(231, 68, 117) ;
     font-size: 17px;
-    font-weight: 500;
-    background-color: rgba(255, 255, 255, 0.067);
-    border: 2px solid rgb(231, 68, 117);
+    font-weight: 450;
     border-radius: 25px;
     cursor: pointer;
-   transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
 }
 
 .btns .btnFirst:hover{
