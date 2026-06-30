@@ -1,9 +1,9 @@
 import styles from "./Projects.module.css";
-import fotoComputador from "../../assets/notebook-codando.webp"
+import CapaProjetoFaculdade from "../../assets/capa-projeto-faculdade.PNG"
+import CapaCocaCola from "../../assets/capa-projeto-cocaCola.PNG"
+import capaLojaBeleza from "../../assets/capa-projeto-lojaBeleza.PNG"
 import { ExternalLink } from 'lucide-react'
 import { motion } from 'framer-motion'
-
-
 
 function Projects() {
   return(
@@ -33,7 +33,7 @@ function Projects() {
         viewport={{ once: true }}
         className={styles.myProject}>
           <div className={styles.imagem}>
-            <img src={fotoComputador}/>
+            <img src={capaLojaBeleza}/>
           </div>
           <h3>Loja de Beleza</h3>
           <p>
@@ -56,7 +56,7 @@ function Projects() {
         viewport={{ once: true }}
         className={styles.myProject}>  
           <div className={styles.imagem}>
-            <img src={fotoComputador}/>
+            <img src={CapaProjetoFaculdade}/>
           </div>
           <h3>Projeto Faculdade</h3>
           <p>
@@ -78,7 +78,7 @@ function Projects() {
         viewport={{ once: true }}
         className={styles.myProject}>  
           <div className={styles.imagem}>
-            <img src={fotoComputador}/>
+            <img src={CapaCocaCola}/>
           </div>
           <h3>Coca Cola</h3>
           <p>

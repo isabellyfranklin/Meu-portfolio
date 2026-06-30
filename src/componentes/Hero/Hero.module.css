@@ -58,7 +58,7 @@
 }
 
 .btns .btnSecond{
-     width: 145px;
+    width: 145px;
     height: 55px;
     background-color:rgba(255, 255, 255, 0.041) ;
     padding: 14px 40px;
@@ -74,18 +74,18 @@
 
 .btns .btnFirst:hover{
     color: black;
+    padding-top: 15px;
     background-color: rgb(255, 255, 255);
     border: 2px solid rgb(231, 68, 117);
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
 
-/*.btns .btnSecond:hover{
+.btns .btnSecond:hover{
     color: black;
     background-color: white;
     border: 3px solid rgb(231, 68, 117);
-    transform: scale(1.1);
+    transform: scale(1.0);
 }
-*/
 
 .imagem{
     position: relative;
