@@ -9,6 +9,12 @@
     font-family: "Poppins", sans-serif;
 }
 
+@media screen and (max-width: 640px) {
+    .navbar ul{
+        display: none;
+    }
+}
+
 .navbar h1{
     background-color: white;
     background-clip: text;
