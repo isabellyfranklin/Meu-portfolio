@@ -7,7 +7,7 @@ import imgJob from './../../assets/icon-job.svg'
 
 function About() {
     return (
-        <section className={style.about}>
+        <section id='about' className={style.about}>
             <span className={style.tag}>quem sou eu</span>
 
             <motion.h2
@@ -29,7 +29,11 @@ function About() {
                     <p>Estou sempre buscando aprender novas tecnologias e evoluir minhas habilidades, com interesse especial em desenvolvimento front-end moderno e interfaces criativas.</p>
                     <div className={style.bioLinks}>
                         <a href="#projects" className={style.btnPrimary}>Ver projetos</a>
-                        <a href="/cv.pdf" className={style.btnOutline}>Download CV</a>
+
+                        <a href="public/curriculo.pdf" 
+                         download="Curriculo-Isabelly-franklin-FrontEnd.pdf"
+                         
+                         className={style.btnOutline}>Download CV</a>
                     </div>
                 </motion.div>
 

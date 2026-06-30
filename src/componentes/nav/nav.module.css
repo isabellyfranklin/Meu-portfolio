@@ -31,17 +31,21 @@
     display: flex;
     list-style: none;
     gap: 3rem;
-    color: white;
-    font-size: 17px;
     padding: 27px 50px 10px 15px;
 }
 
 .navbar li{
     font-family: "Poppins", sans-serif;
-    font-size: 900;
+    font-size: 17px;
     transition: 0.3s ease;
 }
 
-.navbar li:hover{
+.navbar li a{
+    color: white;
+    font-size: 17px;
+    text-decoration: none;
+}
+
+.navbar li a:hover{
     color: #ff5ac2;
 }

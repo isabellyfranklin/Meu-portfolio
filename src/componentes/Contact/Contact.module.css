@@ -40,10 +40,12 @@
     color: white;
     text-decoration: none;
     cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease
 }
 
 .mediaContato .media:hover{
-    background-color: rgb(34, 34, 91);
+    transform: all 0.3s ease;
+    background-color: rgba(34, 34, 91, 0.449);
 }
 
 .mediaContato .media .mediaIcon{

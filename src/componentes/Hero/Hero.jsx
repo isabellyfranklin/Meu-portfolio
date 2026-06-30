@@ -20,14 +20,28 @@ function Hero (){
                 <p>Desenvolvedora front-end apaixonada por criar interfaces modernas, responsivas e com aquele cuidado especial nos detalhes.</p>
             
                 <div className={styles.btns}>
-                    <a className={styles.btnFirst} href="#">Ver Projetos</a>
-                    <a className={styles.btnSecond}  href="#">Contato</a>
+                    <a className={styles.btnFirst} href="#projects">Ver Projetos</a>
+                    <a className={styles.btnSecond}  href="#contact">Contato</a>
                 </div>
 
                 <div className={styles.socialMedia}>
-                    <a className={styles.icon} href="https://github.com/isabellyfranklin"><img src={imgGitHub}/></a>
-                    <a className={styles.icon} href="https://www.linkedin.com/in/isabelly-franklin-6baa56268/"><img src={imgLink}/></a>
-                    <a className={styles.icon} href="#" style={{margin:"10px 0px 0px", }}><img src={imgMail}/></a>              
+                    <a className={styles.icon} 
+                    href="https://github.com/isabellyfranklin" target='_blank'
+                    >
+                        <img src={imgGitHub}/>
+                     </a>
+
+                    <a className={styles.icon} 
+                    href="https://www.linkedin.com/in/isabelly-franklin-6baa56268/"
+                    target='_blank'
+                    >
+                        <img src={imgLink}/>
+                    </a>
+
+                    <a className={styles.icon} 
+                    href="#" style={{margin:"10px 0px 0px", }}>
+                        <img src={imgMail}/>
+                    </a>              
                 </div>
             </motion.div>
 

@@ -5,7 +5,7 @@ import imgLink from './../../assets/icon-linkedin.svg'
 
 function Contact (){
     return(
-    <section className={styles.contato}>
+    <section id='contact' className={styles.contato}>
         <h2>Vamos Trabalhar Juntos</h2>
         <p>Estou sempre aberto a novos projetos e oportunidades</p>
 

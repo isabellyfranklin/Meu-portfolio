@@ -9,7 +9,7 @@ import IconResposividade from './../../assets/icon-resposividade.svg'
 
 function Skills (){
     return(
-        <section className={styles.skills}>
+        <section id='skills' className={styles.skills}>
 
             <motion.h2
             initial={{ opacity: 0, y: -30 }}  

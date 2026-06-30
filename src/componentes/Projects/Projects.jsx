@@ -7,7 +7,7 @@ import { motion } from 'framer-motion'
 
 function Projects() {
   return(
-    <section className={styles.projects}>
+    <section id="projects" className={styles.projects}>
       <motion.h2
       initial={{ opacity: 0, y: -30 }}  
       whileInView={{ opacity: 1, x: 0 }} 
@@ -50,7 +50,7 @@ function Projects() {
 
         {/*PROJETO DOIS*/}
         <motion.div 
-        i initial={{ opacity: 0, y: 50 }}
+        initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.15 }}
         viewport={{ once: true }}

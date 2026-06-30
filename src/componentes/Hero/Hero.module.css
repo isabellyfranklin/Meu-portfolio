@@ -46,10 +46,11 @@
     width: 145px;
     height: 55px;
     background-color:rgb(231, 68, 117) ;
-    padding: 18px 25px;
+    padding: 18px 22px;
     text-decoration: none;
     border: none;
     color: white;
+    font-size: 17px;
     font-weight: 450;
     border-radius: 25px;
     cursor: pointer;
@@ -62,7 +63,8 @@
     padding: 16px 5px 0px 40px;
     text-decoration: none;
     color: rgb(255, 255, 255);
-    font-size: 500;
+    font-size: 17px;
+    font-weight: 500;
     background-color: rgba(255, 255, 255, 0.067);
     border: 2px solid rgb(231, 68, 117);
     border-radius: 25px;
